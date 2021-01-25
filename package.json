@@ -7,7 +7,8 @@
     "sol:compile": "truffle compile",
     "sol:dev": "truffle dev",
     "sol:console": "truffle console",
-    "sol:test": "truffle test"
+    "sol:test": "truffle test",
+    "sol:migrate": "truffle migrate"
   },
   "devDependencies": {
     "babel-polyfill": "^6.26.0",

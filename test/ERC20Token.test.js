@@ -36,5 +36,13 @@ contract('Token generator', ([owner, investor]) => {
       let result = await token.balanceOf(investor);
       assert.equal(result.toString(), tokens('10'));
     });
+
+    it('Should be able to transfer from another account', async () => {
+      await token.approve(owner, tokens('10'));
+      await token.transferFrom(owner, investor, tokens('10'), { from: owner })
+      let result = await token.balanceOf(investor);
+      assert.equal(result.toString(), tokens('20'));
+
+    });
   })
 });

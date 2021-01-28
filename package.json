@@ -8,7 +8,11 @@
     "sol:dev": "truffle dev",
     "sol:console": "truffle console",
     "sol:test": "truffle test",
-    "sol:migrate": "truffle migrate"
+    "sol:migrate": "truffle migrate",
+    "ganache": "ganache-cli --chainId 8"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   },
   "devDependencies": {
     "babel-polyfill": "^6.26.0",
@@ -19,7 +23,8 @@
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
-    "chai-bignumber": "^3.0.0"
+    "chai-bignumber": "^3.0.0",
+    "ganache-cli": "^6.12.2"
   },
   "dependencies": {
     "truffle": "^5.1.63",
